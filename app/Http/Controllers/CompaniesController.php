@@ -9,7 +9,7 @@ class CompaniesController extends Controller
 {
     public function create()
     {
-        return view('compania.create');
+        return view('companies');
     }
 
     public function store(Request $request)

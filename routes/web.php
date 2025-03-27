@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArmyCorpsController;
 use App\Http\Controllers\BarracksController;
@@ -14,3 +13,5 @@ Route::post('/cuartel/store', [BarracksController::class, 'store'])->name('cuart
 
 Route::get('/compania/create', [CompaniesController::class, 'create'])->name('compania.create');
 Route::post('/compania/store', [CompaniesController::class, 'store'])->name('compania.store');
+
+

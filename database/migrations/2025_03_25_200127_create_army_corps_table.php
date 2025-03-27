@@ -6,22 +6,18 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
+
     public function up(): void
     {
         Schema::create('army_corps', function (Blueprint $table) {
-            $table->id(); // Laravel generará 'id' como BIGINT UNSIGNED AUTO_INCREMENT
-            $table->integer('denomination');
+            $table->id(); 
+            $table->string('denomination');
             $table->timestamps();
         });
         
     }
 
-    /**
-     * Reverse the migrations.
-     */
+
     public function down(): void
     {
         Schema::dropIfExists('army_corps');

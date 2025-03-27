@@ -9,7 +9,7 @@ class ArmyCorpsController extends Controller
 {
     public function create()
     {
-        return view('cuerpo_ejercito.create');
+        return view('army_corps');
     }
 
     public function store(Request $request)

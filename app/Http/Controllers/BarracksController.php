@@ -9,7 +9,7 @@ class BarracksController extends Controller
 {
     public function create()
     {
-        return view('cuartel.create');
+        return view('barracks');
     }
 
     public function store(Request $request)
