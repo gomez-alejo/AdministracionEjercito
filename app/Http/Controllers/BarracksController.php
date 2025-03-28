@@ -15,13 +15,11 @@ class BarracksController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'id' => 'required|string|max:10',
             'name' => 'required|string|max:30',
             'location' => 'required|string|max:10',
         ]);
 
         barracks::create([
-            'id' => $request->id,
             'name' => $request->name,
             'location' => $request->location,
         ]);

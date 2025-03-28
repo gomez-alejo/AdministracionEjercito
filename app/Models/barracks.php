@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class barracks extends Model
 {
     use HasFactory;
+    protected $table= 'barracks';
+    protected $fillable = ['name', 'location'];
 }

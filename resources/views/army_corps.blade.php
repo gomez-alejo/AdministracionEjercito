@@ -17,10 +17,7 @@
 
     <form action="{{ route('cuerpo_ejercito.store') }}" method="POST">
         @csrf
-        <div>
-            <label for="id">Código:</label>
-            <input type="text" name="id" id="id" required>
-        </div>
+
         <div>
             <label for="denomination">Denominación:</label>
             <input type="number" name="denomination" id="denomination" required>

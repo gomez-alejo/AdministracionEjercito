@@ -15,12 +15,11 @@ class ArmyCorpsController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'id' => 'required|string|max:10',
+            
             'denomination' => 'required|string|max:255', // Cambiado de integer a string si almacena texto
         ]);
 
         army_corps::create([
-            'id' => $request->id,
             'denomination' => $request->denomination,
         ]);
 
