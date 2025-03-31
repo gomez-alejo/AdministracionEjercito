@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class service extends Model
+class Service extends Model
 {
     use HasFactory;
         // Relación N:M (Un Servicio puede ser realizado por muchos Soldados y viceversa)
