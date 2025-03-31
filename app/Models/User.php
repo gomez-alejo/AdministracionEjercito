@@ -46,6 +46,6 @@ class User extends Authenticatable
         // Relación 1:1 (Un usuario puede estar vinculado a un soldado)
         public function soldier()
         {
-            return $this->hasOne(soldiers::class, 'user_id');
+            return $this->hasOne(soldier::class, 'user_id');
         }
 }

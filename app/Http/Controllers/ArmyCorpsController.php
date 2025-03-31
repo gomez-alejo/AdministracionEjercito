@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\army_corps;
+use App\Models\army_corp;
 use Illuminate\Http\Request;
 
 class ArmyCorpsController extends Controller
@@ -19,7 +19,7 @@ class ArmyCorpsController extends Controller
             'denomination' => 'required|string|max:255', // Cambiado de integer a string si almacena texto
         ]);
 
-        army_corps::create([
+        army_corp::create([
             'denomination' => $request->denomination,
         ]);
 
