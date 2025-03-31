@@ -21,7 +21,7 @@ class Soldier extends Model
     ];
 
     // Relación 1:N inversa (Un Soldado pertenece a un ArmyCorps)
-    public function armyCorps()
+    public function armyCorp()
     {
         return $this->belongsTo(army_corp::class, 'army_corps_id');
     }
@@ -42,5 +42,10 @@ class Soldier extends Model
     public function services()
     {
         return $this->belongsToMany(service::class, 'soldier_service', 'soldier_id', 'service_id')->withPivot('date');
+    }
+
+    public function User()
+    {
+        return $this->hasOne(User::class, 'soldier_id');
     }
 }

@@ -12,7 +12,7 @@ class Barrack extends Model
     protected $fillable = ['name', 'location'];
 
         // Relación 1:N inversa (Un Cuartel pertenece a un ArmyCorps)
-        public function armyCorps()
+        public function armyCorp()
         {
             return $this->belongsTo(army_corp::class, 'army_corps_id');
         }
