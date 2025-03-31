@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\soldiers;
+use App\Models\Soldier;
 use Illuminate\Http\Request;
 
 class SoldiersController extends Controller
@@ -34,7 +34,7 @@ class SoldiersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(soldiers $soldiers)
+    public function show(Soldier $soldiers)
     {
         //
     }
@@ -42,7 +42,7 @@ class SoldiersController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(soldiers $soldiers)
+    public function edit(Soldier $soldiers)
     {
         //
     }
@@ -50,7 +50,7 @@ class SoldiersController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, soldiers $soldiers)
+    public function update(Request $request, Soldier $soldiers)
     {
         //
     }
@@ -58,7 +58,7 @@ class SoldiersController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(soldiers $soldiers)
+    public function destroy(Soldier $soldiers)
     {
         //
     }

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\services;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class ServicesController extends Controller
@@ -34,7 +34,7 @@ class ServicesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(services $services)
+    public function show(Service $services)
     {
         //
     }
@@ -42,7 +42,7 @@ class ServicesController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(services $services)
+    public function edit(Service $services)
     {
         //
     }
@@ -50,7 +50,7 @@ class ServicesController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, services $services)
+    public function update(Request $request, Service $services)
     {
         //
     }
@@ -58,7 +58,7 @@ class ServicesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(services $services)
+    public function destroy(Service $services)
     {
         //
     }

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\company_barrack;
+use App\Models\Company_barrack;
 use Illuminate\Http\Request;
 
 class CompanyBarrackController extends Controller
