@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class soldier_service extends Model
 {
     use HasFactory;
+    
 }

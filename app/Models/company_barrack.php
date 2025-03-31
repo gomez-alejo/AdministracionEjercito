@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class company_barrack extends Model
 {
     use HasFactory;
+
 }

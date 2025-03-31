@@ -23,4 +23,16 @@ class Companies extends Model
         'id',
         'primary_activity',
     ];
+
+        // Relación 1:N (Una Compañía tiene muchos Soldados)
+        public function soldiers()
+        {
+            return $this->hasMany(soldiers::class, 'company_id');
+        }
+    
+        // Relación N:M (Una Compañía puede estar en muchos Cuarteles y viceversa)
+        public function barracks()
+        {
+            return $this->belongsToMany(barracks::class, 'barrack_company', 'company_id', 'barrack_id');
+        }
 }

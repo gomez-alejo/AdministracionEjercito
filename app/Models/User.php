@@ -42,4 +42,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+        // Relación 1:1 (Un usuario puede estar vinculado a un soldado)
+        public function soldier()
+        {
+            return $this->hasOne(soldiers::class, 'user_id');
+        }
 }
